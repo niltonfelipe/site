@@ -1,10 +1,9 @@
 
 :root {
-  --color-brown: #65524D;
-  --color-gray: #817E9F;
-  --color-green: #7FC29B;
-  --color-lime: #B5EF8A;
-  --color-yellow: #D7F171;
+  --color-primary: #116B44;
+  --color-accent: #96E072;
+  --color-text: #2C3532;
+  --color-background: #FFFCF2;
 }
 
 * {
@@ -16,15 +15,131 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: var(--color-brown);
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 header {
-  background: linear-gradient(135deg, var(--color-green), var(--color-lime));
-  padding: 2rem;
-  min-height: 80vh;
+  padding: 2rem 5%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--color-background);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.tag {
+  background: rgba(150, 224, 114, 0.2);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0 auto 2rem;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+h1 span {
+  color: var(--color-primary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.primary-button, .secondary-button {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.primary-button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.cta-button {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.scroll-down {
+  color: var(--color-text);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.7;
 }
 
 nav {
