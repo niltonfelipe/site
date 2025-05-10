@@ -399,16 +399,19 @@ h2 {
   line-height: 1.6;
 }
 
-.grid-container {
+.stats-layout {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.left-grid, .right-grid {
+.stats-row {
   display: flex;
-  flex-direction: column;
   gap: 1.5rem;
+}
+
+.stats-row .stat-card {
   flex: 1;
 }
 
