@@ -514,9 +514,10 @@ h2 {
   color: var(--color-primary);
   padding: 0.5rem 1rem;
   border-radius: 50px;
-  display: inline-block;
-  margin-bottom: 1.5rem;
+  display: block;
+  margin: 0 auto 1.5rem;
   font-size: 0.9rem;
+  width: fit-content;
 }
 
 .contact h2 {
@@ -654,7 +655,7 @@ textarea {
   .contact-container {
     grid-template-columns: 1fr;
   }
-  
+
   .contact h2 {
     font-size: 2rem;
   }
@@ -821,9 +822,10 @@ footer {
   color: var(--color-primary);
   padding: 0.5rem 1rem;
   border-radius: 50px;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   font-size: 0.9rem;
+  width: fit-content;
   text-align: center;
 }
 
