@@ -524,12 +524,18 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-subtitle {
   color: #666;
   margin-bottom: 4rem;
   max-width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact-container {
